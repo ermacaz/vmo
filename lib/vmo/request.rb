@@ -28,7 +28,7 @@ module Vmo
     end
 
     private
-      def get_request(url, options={})
+      def self.get_request(url, options={})
         options = auth_options(options)
         HTTParty.get(BASE_URL + url, options)
       end
