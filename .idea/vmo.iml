@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="RUBY_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="gem" name="Ruby Gem">
+      <configuration>
+        <option name="GEM_APP_ROOT_PATH" value="$MODULE_DIR$" />
+        <option name="GEM_APP_TEST_PATH" value="$MODULE_DIR$/test" />
+        <option name="GEM_APP_LIB_PATH" value="$MODULE_DIR$/lib" />
+      </configuration>
+    </facet>
+  </component>
+  <component name="ModuleRunConfigurationManager">
+    <configuration default="false" name="install gem" type="CommandRunConfigurationType" factoryName="Gem Command">
+      <module name="vmo" />
+      <COMMAND_RUN_CONFIGURATION NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <COMMAND_RUN_CONFIGURATION NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <COMMAND_RUN_CONFIGURATION NAME="SHOULD_USE_SDK" VALUE="false" />
+      <COMMAND_RUN_CONFIGURATION NAME="ALTERN_SDK_NAME" VALUE="" />
+      <COMMAND_RUN_CONFIGURATION NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <COMMAND_CONFIG_SETTINGS_ID NAME="GEM_NAME" VALUE="vmo" />
+      <COMMAND_CONFIG_SETTINGS_ID NAME="EXECUTABLE_NAME" VALUE="gem" />
+      <COMMAND_CONFIG_SETTINGS_ID NAME="EXECUTABLE_ARGS" VALUE="install ./vmo-0.1.4.gem" />
+      <COMMAND_CONFIG_SETTINGS_ID NAME="WORKING_DIR" VALUE="install ./vmo-0.1.4.gem" />
+      <method />
+    </configuration>
+    <configuration default="false" name="IRB console: vmo" type="IrbRunConfigurationType" factoryName="IRB console" temporary="true">
+      <module name="vmo" />
+      <IRB_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <IRB_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <IRB_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <IRB_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <IRB_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <IRB_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$USER_HOME$/.rvm/rubies/ruby-2.2.1/bin/irb" />
+      <IRB_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="--prompt simple" />
+      <IRB_RUN_CONFIG NAME="IS_RAILS_CONSOLE" VALUE="false" />
+      <method />
+    </configuration>
+  </component>
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/test" isTestSource="true" />
+    </content>
+    <orderEntry type="jdk" jdkName="RVM: ruby-2.2.1 [Nfuse]" jdkType="RUBY_SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="bundler (v1.10.5, RVM: ruby-2.2.1 [Nfuse]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="httparty (v0.13.5, RVM: ruby-2.2.1 [Nfuse]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="httpclient (v2.6.0.1, RVM: ruby-2.2.1 [Nfuse]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="json (v1.8.3, RVM: ruby-2.2.1 [Nfuse]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="multi_xml (v0.5.5, RVM: ruby-2.2.1 [Nfuse]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rake (v10.4.2, RVM: ruby-2.2.1 [Nfuse]) [gem]" level="application" />
+  </component>
+</module>

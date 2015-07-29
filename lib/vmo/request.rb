@@ -2,14 +2,14 @@ module Vmo
   class Request < Vmo::Base
     BASE_URL = 'https://api.vimeo.com'
 
-    def self.get_user(token)
+    def self.get_user_videos(token, options)
       @token = token
       response = JSON.parse(get_request('/me').body)
       name = response['name']
       link = response['link']
       id   = /(\d+)/.match(response['uri'])[0]
       videos = []
-      vid_response = JSON.parse(get_request('/me/videos').body)['data']
+      vid_response = JSON.parse(get_request("/me/videos?page=#{options[:page]}&per_page=#{options[:per_page]}").body)['data']
       vid_response.each do |video|
         vid_id = /(\d+)/.match(video['uri'])[0]
         vid_name = video['name']
